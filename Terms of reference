@@ -1,0 +1,120 @@
+Terms of reference
+Not an authorized user:
+Google authorization
+The user can register in the form with their Google account credentials. After that, a click on the Google button should authorize the user and redirect them to their account.
+Log in using the form
+The user can log in by clicking the Login button in the authorization form.
+
+
+The user can register by clicking the REGISTER button in the authorization form.
+
+
+The field in the user authorization form - e-mail must be validated:
+
+
+Mandatory value,
+- may include Latin letters, numbers, signs
+- must contain the sign "@" / ""dot""
+- the minimum number of characters in the field is 10 (inclusive), the maximum number of characters in the field is 63 (inclusive)
+- there must be at least 2 characters before the "@"" symbol
+- the field can contain hyphens, and the hyphen cannot be at the beginning or end of the email
+- the part of the e-mail with the username can contain Latin letters, numbers, period, hyphen, dash, underline"
+The field in the user authorization form
+ - the password must be validated:
+- Mandatory value
+- can include both numbers and letters
+
+
+If the user entered an invalid value in the email or password fields below the field, a validation error message should appear.
+Authorized user:
+header
+In the header, the user should see
+app logo,
+
+
+an icon with the first letter of the user's name (part of the login email)
+
+
+the button
+
+
+The user can click on the logo and return to the main page
+
+
+The user can click the Logout button, after which a mode should appear with the text "Do you really want to log out?" and the option to confirm or decline.
+
+
+Start page
+When first entering the application, near zero balance, the user should see the message - "Hello! To get started, please deposit your current account balance! You can't spend money until you have it :)"
+
+
+If the balance is zero, the user can enter the value in the balance field and click Confirm. After that, the message from step 1 should be hidden.
+
+
+Upon entering the main page, the user can see the current date in the add transaction form.
+
+
+The user can change the date in the add transaction form and add a transaction for any day: current or previous;
+
+
+The user can enter a description of the transaction in the Product description field: - Mandatory value, - can be letters, spaces, - minimum 3 characters, - max: 20 characters.
+
+
+The user can select the name of the transaction category from the drop-down list in the field - required (Product category - mandatory).
+
+
+The user can enter the transaction amount in this field - it must be a number, the minimum value is 1
+
+
+The user can click the ENTER button, then:
+ - the transaction will be added and displayed in the transaction list
+- the balance will increase with the value of the transaction (for the income transaction)
+ - the balance of the transaction value will decrease (for a spending transaction)
+- the value of the transaction amount will increase in the summary of the month in which the transaction was added
+The user can click the CLEAR button, after which all data entered in the form fields (except the date field) should be deleted.
+
+
+The user can delete a transaction from the list.
+
+
+The user can change the date in the add transaction form and:
+ - view the list of transactions for this date,
+- delete any transaction for this date,
+ - to add a transaction for this date.
+
+
+At the time of removing the transaction, a modal window should appear with the option to confirm or cancel the action.
+
+
+In case of transaction removal:
+- the value in the "Balance" field must decrease by the value of the removed transaction (in the case of a revenue transaction)
+- the value in the "Balance" field must increase by the amount of the removed transaction (in the case of an expense transaction)
+- the summary value of the month from which the removed transaction originates should decrease by the value of this transaction.
+
+
+The user can proceed to expense and income transactions.
+
+
+If more transactions are entered than the transaction list can hold, the user can use scroll to navigate through the list.
+
+
+The user can see the Summary with the data of all transactions (income or expenses) for all months from the beginning of the year to the current month.
+
+
+The user can go to the Reports page by clicking the Go to Reports button
+
+
+Reports page
+The user should see the button to return to the main page
+
+
+The user should see a month change pager, with the ability to switch only from the current month to previous months.
+
+
+When switching from one month to another, the user can see: - the amounts of income and expenses for the selected month - a pager for switching between types of income and expense transactions
+
+
+By switching from one type of transaction to another, the user can see only those categories of transactions that were added in the selected month.
+
+
+The user can click on any category of transactions displayed and will see a graph for that category, which should show in descending order the amounts of all products for that category added in the selected month.
